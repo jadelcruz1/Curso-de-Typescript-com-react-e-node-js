@@ -1,7 +1,7 @@
 // aula 3 - componente
 
 
-import React, { ReactElement } from 'react'
+import React, { ReactElement } from 'react';
 
 
 

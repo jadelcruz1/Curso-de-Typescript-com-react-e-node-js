@@ -1,5 +1,9 @@
 import React from 'react';
 
+// 4 - importando componentes
+
+import FirstComponents from './components/FirstComponents';
+
 
 function App() {
 
@@ -43,6 +47,7 @@ function App() {
       )}
 
         <div>
+          <FirstComponents />
         <p> {userName(name)}</p>
         <p> {userAge(age)}</p>
 
