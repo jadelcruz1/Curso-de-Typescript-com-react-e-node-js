@@ -13,6 +13,20 @@ function App() {
 
    const isStudent: Boolean = true;
 
+   const userName = (name: string): string =>  {
+     return (
+      ` Olá ${name}, você aprendeu Ts!`
+
+     )      
+   };
+
+   const userAge = (age: number) => {
+     return (
+       `Sua idade é ${age}`
+
+     );
+   };
+
 
   return (
     <>
@@ -27,6 +41,14 @@ function App() {
       {isStudent && (
         <p> ele é estudante </p>
       )}
+
+        <div>
+        <p> {userName(name)}</p>
+        <p> {userAge(age)}</p>
+
+          
+        </div>
+      
       
     
     </>
