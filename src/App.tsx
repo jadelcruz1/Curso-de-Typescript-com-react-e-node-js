@@ -1,8 +1,11 @@
 import React from 'react';
 
-// 4 - importando componentes
-
 import FirstComponents from './components/FirstComponents';
+
+// aula 4 - desestruturando componentes com props
+
+import SecondComponents from './components/SecondComponents';
+import DesctuctionComponents from './components/DesctuctionComponents';
 
 
 function App() {
@@ -48,8 +51,18 @@ function App() {
 
         <div>
           <FirstComponents />
+          <SecondComponents name="Segundo!"/>
         <p> {userName(name)}</p>
         <p> {userAge(age)}</p>
+
+        <DesctuctionComponents 
+
+        nome="Jardel"
+        Sobrenome='Cruz'
+        Telefone={31982932760}
+        tags ={["Ts" , "Js"]}  
+        
+        />
 
           
         </div>

@@ -14,4 +14,4 @@ function FirstComponents (): ReactElement {
   )
 }
 
-export default  FirstComponents 
+export default FirstComponents 
