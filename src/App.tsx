@@ -5,7 +5,7 @@ import FirstComponents from './components/FirstComponents';
 // aula 5 - desestruturando componentes com props
 
 import SecondComponents from './components/SecondComponents';
-import DesctuctionComponents from './components/DesctuctionComponents';
+import DesctuctionComponents, {Category} from './components/DesctuctionComponents';
 
 // aula 6 - Hook useState
 
@@ -65,6 +65,10 @@ function App() {
         Sobrenome='Cruz'
         Telefone={31982932760}
         tags ={["Ts" , "Js"]}  
+         
+        // aula 8 Enum
+
+        category={Category.P}
         
         />
 
