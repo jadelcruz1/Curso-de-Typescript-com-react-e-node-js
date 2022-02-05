@@ -10,6 +10,7 @@ import DesctuctionComponents, {Category} from './components/DesctuctionComponent
 // aula 6 - Hook useState
 
 import State from './components/State';
+import Context from './components/Context';
 
 interface IAppContext {
   language: string;
@@ -90,6 +91,8 @@ function App() {
         />
 
         <State />
+
+        <Context />
 
           
         </div>
