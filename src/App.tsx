@@ -2,10 +2,14 @@ import React from 'react';
 
 import FirstComponents from './components/FirstComponents';
 
-// aula 4 - desestruturando componentes com props
+// aula 5 - desestruturando componentes com props
 
 import SecondComponents from './components/SecondComponents';
 import DesctuctionComponents from './components/DesctuctionComponents';
+
+// aula 6 - Hook useState
+
+import State from './components/State';
 
 
 function App() {
@@ -63,6 +67,8 @@ function App() {
         tags ={["Ts" , "Js"]}  
         
         />
+
+        <State />
 
           
         </div>
