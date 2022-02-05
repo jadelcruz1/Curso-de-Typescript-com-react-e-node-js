@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext } from 'react';
 
 import FirstComponents from './components/FirstComponents';
 
@@ -10,6 +10,14 @@ import DesctuctionComponents, {Category} from './components/DesctuctionComponent
 // aula 6 - Hook useState
 
 import State from './components/State';
+
+interface IAppContext {
+  language: string;
+  Framework: string;
+  Project: number;
+}
+
+export const AppContext = createContext<IAppContext | null>(null)
 
 
 function App() {
@@ -38,9 +46,18 @@ function App() {
      );
    };
 
+   
+   const contextValue: IAppContext = {
+     language:"Java",
+     Framework: "react",
+     Project: 3,
+
+   };
+
 
   return (
-    <>
+    <> 
+      <AppContext.Provider value={contextValue}>
       <h1> Projeto React TS</h1>
 
       <p> Nome: {name}</p>
@@ -77,7 +94,7 @@ function App() {
           
         </div>
       
-      
+        </AppContext.Provider>
     
     </>
     
